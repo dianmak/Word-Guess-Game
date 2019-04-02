@@ -1,0 +1,32 @@
+.container-fluid{
+
+}
+
+.pagetop{
+    text-align: center;
+    font-family: 'Trattatello', 'fantasy';
+}
+
+.welcometo{
+    font-size: 20px;
+}
+
+.gametitle{
+    font-size: 40px;
+}
+
+body{
+    background-image: url("../images/background.jpg");
+}
+
+#display {
+    text-align: center;
+    margin-top: 175px;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
