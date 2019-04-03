@@ -101,8 +101,8 @@ function checkifwon(guessedtemp, wordtoguesstemp) {
 }
 
 function validate(str) {
-    var objRegExp = /^[a-z]+$/;
-    return objRegExp.test(str);
+    var letters = /^[a-z]+$/;
+    return letters.test(str);
 }
 
 
