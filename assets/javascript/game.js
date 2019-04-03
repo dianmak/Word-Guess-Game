@@ -71,7 +71,7 @@ function newgame() {
         console.log("guesses left: " + guesseslefttemp);
         console.log("check if won: " + checkifwon(guessedarray, wordtoguess));
 
-        if (guessesleft === 0 || checkifwon(guessedarray, wordtoguess) === true) {
+        if (guesseslefttemp === 0 || checkifwon(guessedarray, wordtoguess) === true) {
             if (checkifwon(guessedarray, wordtoguess) === true)
                 winstemp = winstemp + 1;
             newgame();
