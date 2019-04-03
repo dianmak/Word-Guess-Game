@@ -39,6 +39,9 @@ function newgame() {
 
     document.onkeyup = function (event) {
         var key = event.key;
+
+        if (validate(key) === false)
+            return;
         if (guessedarray.includes(key))
             return;
 
@@ -79,14 +82,27 @@ function newgame() {
 
 function checkifwon(guessedtemp, wordtoguesstemp) {
     var won = false;
+    var temp = "";
     for (var i = 0; i < wordtoguesstemp.length; i++) {
         var c = wordtoguesstemp.charAt(i);
-        if (guessedtemp.includes(c))
-            won = true;
-        else
-            won = false;
+        if (temp.includes(c) === false)
+            temp += c;
     }
+    console.log(temp);
+
+    for (var i = 0; i < temp.length; i++) {
+        var d = temp.charAt(i);
+        if (guessedtemp.includes(d) === false)
+            return won
+    }
+
+    won = true;
     return won;
+}
+
+function validate(str) {
+    var objRegExp = /^[a-z]+$/;
+    return objRegExp.test(str);
 }
 
 
