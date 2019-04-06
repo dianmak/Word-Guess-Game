@@ -17,6 +17,7 @@
 
 body{
     background-image: url("../images/background.jpg");
+    background-size: cover;
 }
 
 #display {
@@ -29,4 +30,6 @@ body{
 p {
     text-align: center;
     font-size: 25px;
+    /* background: rgba(255,255,255, 0.2); */
+    text-shadow: white 0px 0px 10px;
 }
